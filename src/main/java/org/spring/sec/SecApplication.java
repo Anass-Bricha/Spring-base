@@ -10,4 +10,7 @@ public class SecApplication {
         SpringApplication.run(SecApplication.class, args);
     }
 
+
+    // TODO : add documentation
+    // TODO : Check if the api is working 
 }

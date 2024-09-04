@@ -1,6 +1,32 @@
 spring:
   application:
   name: sec
+
+  datasource:
+    url: jdbc:h2:mem:testdb  # In-memory database URL
+    username: sa               # Default username for H2
+    password:                  # Default password for H2 (empty)
+    driver-class-name: org.h2.Driver  # H2 driver class name
+  h2:
+    console:
+      enabled: true  # Enable H2 Console for accessing the database via a web interface
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: update  # Automatically update the database schema (for development only)
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
 jwt:
-  secret = 56b7a985f9db5c4451c76141a31a846bbee2d5a2155ce323cdf07410aa1b797a
-  expiration =
+  secret : 56b7a985f9db5c4451c76141a31a846bbee2d5a2155ce323cdf07410aa1b797a
+  expiration : 0
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+
+
