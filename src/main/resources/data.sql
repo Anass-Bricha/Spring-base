@@ -26,6 +26,6 @@ INSERT INTO role_authority (role_id, authority_id) VALUES (3, 2); -- WRITE_PRIVI
 
 
 INSERT INTO users (username, password, role_id) VALUES ('admin', '$2a$12$QayUgb668auXilAdC9hvxOJFFqBe/p5DmKsRdUJs16PHvM2rnznsy', 1);
-INSERT INTO users (username, password, role_id) VALUES ('user', '$2b$12$QPZg2FyXcFw5u5T68I9mPehxqTb.d2ISpIDHK2e.UGJ9BLllkuyC.', 2);
+INSERT INTO users (username, password, role_id) VALUES ('user', '$2a$12$h0HvzlKbb3CPywTHq0x6beMv7OdOVuSH3mY2p0awAL9/4gOYZwwcy', 2);
 INSERT INTO users(username, password, role_id) VALUES ('manager', '$2b$12$AA9VVtYOeupCEglJuU9aiOa7LnM57XIkMWgWxiqS5j8RaU78Z3RI.', 3);
 
