@@ -1,6 +1,26 @@
 spring:
   application:
   name: sec
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
 jwt:
-  secret = 56b7a985f9db5c4451c76141a31a846bbee2d5a2155ce323cdf07410aa1b797a
-  expiration =
+  secret : 56b7a985f9db5c4451c76141a31a846bbee2d5a2155ce323cdf07410aa1b797a
+  expiration : 60000
+
+
+
