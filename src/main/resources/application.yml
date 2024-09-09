@@ -22,11 +22,5 @@ jwt:
   secret : 56b7a985f9db5c4451c76141a31a846bbee2d5a2155ce323cdf07410aa1b797a
   expiration : 60000
 
-springdoc:
-  api-docs:
-    path: /api-docs
-  swagger-ui:
-    path: /swagger-ui.html
-
 
 

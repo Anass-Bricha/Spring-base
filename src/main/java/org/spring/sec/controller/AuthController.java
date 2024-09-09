@@ -61,8 +61,6 @@ public class AuthController {
     @GetMapping("/test")
     @PreAuthorize("hasAuthority('WRITE_PRIVILEGE')")
     public String testApi(){
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        System.out.println("User Authorities: " + authentication.getAuthorities());
         return "test";
     }
 }

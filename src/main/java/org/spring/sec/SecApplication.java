@@ -11,6 +11,5 @@ public class SecApplication {
     }
 
 
-    // TODO : add documentation
-    // TODO : Check if the api is working 
+    // TODO : add global exception handler
 }
