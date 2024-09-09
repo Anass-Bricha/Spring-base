@@ -10,6 +10,4 @@ public class SecApplication {
         SpringApplication.run(SecApplication.class, args);
     }
 
-
-    // TODO : add global exception handler
 }
