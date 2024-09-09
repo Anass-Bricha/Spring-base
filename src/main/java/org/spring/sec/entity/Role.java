@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Set;
 
 @Entity
-@Table(name = "roles")
+@Table(name = "role")
 public class Role extends Base{
     private String name;
 
@@ -14,7 +14,7 @@ public class Role extends Base{
     private List<User> users;
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
-            name = "role_authorities",
+            name = "role_authority",
             joinColumns = @JoinColumn(name = "role_id"),
             inverseJoinColumns = @JoinColumn(name = "authority_id")
     )
